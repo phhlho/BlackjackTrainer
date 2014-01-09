@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Black Jack Trainer</title>
+        <link rel="stylesheet" href="styles\odometer-theme-minimal.css"></link>
+        <link rel="stylesheet" href="styles\game.css"></link>
+        <script type="text/javascript" src="scripts\jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="scripts\Odometer\odometer.min.js"></script>
+        <script type="text/javascript" src="scripts\constants.js"></script>
+        <script type="text/javascript" src="scripts\blackjack-objects.js"></script>
+        <script type="text/javascript" src="scripts\game.js"></script>
+    </head>
+    <body>
+        <div id="status">
+            <p>Lives:</p><p id="livesDisplay" class="odometer"></p>
+            <p>Combo:</p><p id="comboDisplay" class="odometer"></p>
+            <p>Score:</p><p id="scoreDisplay" class="odometer"></p>
+        </div>
+        <div id="dealerCards">
+            <p>Dealer:</p><p id="dealerCard"></p>
+        </div>        
+        <div id="userCards">
+            <p>User:</p><p id="userCardOne"></p><p id="userCardTwo"></p>            
+        </div>     
+        <div id="actions">
+            <a class="action-link" data-move="1" href="#">Hit</a>
+            <a class="action-link" data-move="2" href="#">Stand</a>
+            <a class="action-link" data-move="3" href="#">Double</a>
+            <a class="action-link" data-move="4" href="#">Surrender</a>
+            <a class="action-link" data-move="5" href="#">Split</a>            
+        </div>
+    </body>
+</html>
